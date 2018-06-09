@@ -4,9 +4,9 @@ allow_bold = false
 #clickable_url = true
 #dynamic_title = true
 
-font = Gohu GohuFont 12
-#font = t cherry 11
-#font = SF Mono Bold 11
+#font = Gohu GohuFont 12
+font = t cherry 11
+#font = SF Mono Bold 10
 #fullscreen = true
 #geometry = 640x480
 #icon_name = terminal
