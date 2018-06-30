@@ -8,10 +8,8 @@
 ;=====================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
-background = #000C15
+background = #222E38
 background-alt = #222E38
-;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
 primary = #ffb52a
@@ -19,13 +17,13 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:LVDS-1}
 width = 100%
-height = 27
-;offset-x = 1%
-;offset-y = 1%
+height = 26
+;offset-x = 25%
+;offset-y = 95%
 radius = 0
-fixed-center = false
+fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -42,6 +40,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
+;font-0 = SF Mono:size=9:weight=semibold;1
 font-0 = Gohu Gohufont:size=12;1
 font-1 = Gofufont:size:12;1
 font-2 = siji:pixelsize=10;1
@@ -51,25 +50,11 @@ font-4 = Font Awesome 5 Free Solid:pixelsize=8;3
 font-5 = Font Awesome 5 Brands:pixelsize=8;3
 
 modules-left = bspwm i3
-modules-center =
-modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-center = date
+modules-right = filesystem pulseaudio battery wlan eth temperature
 
 tray-position = right
 tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
-
-
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -77,22 +62,6 @@ cursor-scroll = ns-resize
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
-
-#[module/xkeyboard]
-#type = internal/xkeyboard
-#blacklist-0 = num lock
-#
-#format-prefix = " "
-#format-prefix-foreground = ${colors.foreground-alt}
-#format-prefix-underline = ${colors.secondary}
-#
-#label-layout = %layout%
-#label-layout-underline = ${colors.secondary}
-#
-#label-indicator-padding = 2
-#label-indicator-margin = 1
-#label-indicator-background = ${colors.secondary}
-#label-indicator-underline = ${colors.secondary}
 
 [module/filesystem]
 type = internal/fs
@@ -214,10 +183,10 @@ type = internal/network
 interface = wlo1
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = <label-connected>
 #format-connected-background = #00ff00
 format-connected-underline = #61B329
-label-connected =  %local_ip%
+label-connected =  %essid%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
