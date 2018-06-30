@@ -68,7 +68,7 @@ let g:pymode_folding=0
 let g:livepreview_engine = 'evince'
 
 "7) deoplete
-let g:deoplete#disable_auto_complete = 1
+let g:deoplete#disable_auto_complete = 0
 let g:deoplete#enable_at_startup = 1
 setlocal omnifunc=go#complete#Complete
 let g:deoplete#sources#go#gocode_binary = '/home/xa0s/Code/Go/bin/gocode'
@@ -131,7 +131,7 @@ set background=dark
 set t_Co=256
 set termguicolors
 let base16colorspace=256
-colorscheme base16-tomorrow-night
+colorscheme base16-solarflare
 
 " hightlight gohtml as html
 au BufReadPost *.gohtml set syntax=html
@@ -142,4 +142,7 @@ set nohlsearch
 
 " disable numbering
 set nonumber
+let g:go_highlight_types = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
 " ----------------------------------
