@@ -17,18 +17,16 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a mplayer2 state=floating
-bspc rule -a termite floating=on
+bspc rule -a Insomnia desktop='^4'
 bspc rule -a Google-chrome desktop='^1'
 bspc rule -a Subl3 desktop='^2'
 bspc rule -a Code desktop='^2'
 bspc rule -a Atom desktop='^2'
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+
+
 #feh --bg-scale ~/Pictures/Wallpapers/build.jpg
 wal -i ~/Downloads/blured.jpg
 light -S 41
 setxkbmap pl
 #polybar top-left & polybar top-center & polybar top-right
 polybar example
-compton -f
