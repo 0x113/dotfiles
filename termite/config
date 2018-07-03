@@ -5,7 +5,7 @@ allow_bold = false
 #dynamic_title = true
 
 #font = t cherry 11
-font = Cartograph Mono CF semi-Bold 10
+font = Cartograph Mono CF semi-bold 10
 #font = Monaco Bold 9
 #font = SF Mono Bold 10
 #fullscreen = true
@@ -51,7 +51,8 @@ scrollback_lines = 10000
 #foreground = #dcdccc
 #foreground_bold = #ffffff
 #background = #222222
-background = #000000
+background = #2E3440
+foreground = #D8DEE9
 
 # 20% background transparency (requires a compositor)
 #background = rgba(63, 63, 63, 0.8)
@@ -76,7 +77,6 @@ color12 = #94bff3
 color13 = #ec93d3
 color14 = #93e0e3
 color15 = #ffffff
-
 [hints]
 #font = Monospace 12
 #foreground = #dcdccc
