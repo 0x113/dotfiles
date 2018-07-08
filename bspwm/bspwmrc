@@ -24,8 +24,8 @@ bspc rule -a Code desktop='^2'
 bspc rule -a Atom desktop='^2'
 
 
-#feh --bg-scale ~/Pictures/Wallpapers/build.jpg
-wal -i ~/Downloads/blured.jpg
+feh --bg-scale ~/Pictures/Wallpapers/black_mountain.jpg
+#wal -i ~/Downloads/blured.jpg
 light -S 41
 setxkbmap pl
 #polybar top-left & polybar top-center & polybar top-right
