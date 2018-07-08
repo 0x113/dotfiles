@@ -110,6 +110,8 @@ set expandtab ts=4 sw=4 ai
 
 autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
 autocmd Filetype vue setlocal ts=2 sw=2 expandtab
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype gohtml setlocal ts=2 sw=2 expandtab
 " ----------------------------------
 
 
@@ -230,7 +232,7 @@ set background=dark
 set t_Co=256
 set termguicolors
 let base16colorspace=256
-colorscheme deep-space
+colorscheme nord
 
 " hightlight gohtml as html
 au BufReadPost *.gohtml set syntax=html
@@ -240,7 +242,8 @@ autocmd BufWritePre * :%s/\s\+$//e
 set nohlsearch
 
 " disable numbering
-set nonumber
+set relativenumber
+set number
 let g:go_highlight_types = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
