@@ -23,10 +23,10 @@ bspc rule -a Subl3 desktop='^2'
 bspc rule -a Code desktop='^2'
 bspc rule -a Atom desktop='^2'
 
-
-feh --bg-scale ~/Pictures/Wallpapers/black_mountain.jpg
+feh --bg-scale ~/Pictures/Wallpapers/forrest.jpg
 #wal -i ~/Downloads/blured.jpg
 light -S 41
 setxkbmap pl
 #polybar top-left & polybar top-center & polybar top-right
-polybar example
+polybar example &
+compton --no-fading-openclose
