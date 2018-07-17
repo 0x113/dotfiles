@@ -6,8 +6,6 @@ Plug 'mattn/emmet-vim'
 Plug 'tell-k/vim-autopep8'
 Plug 'alvan/vim-closetag'
 Plug 'jiangmiao/auto-pairs'
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
 Plug 'davidhalter/jedi-vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'Shougo/deoplete.nvim'
@@ -28,10 +26,10 @@ Plug 'itchyny/lightline.vim'
 " ---------- COLORS ------------
 Plug 'chriskempson/base16-vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug 'tyrannicaltoucan/vim-deep-space'
-Plug 'whatyouhide/vim-gotham'
 Plug 'endel/vim-github-colorscheme'
 Plug 'arcticicestudio/nord-vim'
+Plug 'reedes/vim-colors-pencil'
+Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 " ------------------------------
@@ -228,11 +226,10 @@ endfunction
 " --------------- UI ---------------
 syntax on
 set encoding=utf-8
-set background=dark
-set t_Co=256
 set termguicolors
 let base16colorspace=256
-colorscheme nord
+colorscheme base16-tomorrow-night
+"set background=dark
 
 " hightlight gohtml as html
 au BufReadPost *.gohtml set syntax=html
@@ -241,7 +238,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 " disable highlight for search
 set nohlsearch
 
-" disable numbering
 set relativenumber
 set number
 let g:go_highlight_types = 1
