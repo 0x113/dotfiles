@@ -22,7 +22,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'itchyny/lightline.vim'
 " ------------------------------
 
-
 " ---------- COLORS ------------
 Plug 'chriskempson/base16-vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
@@ -30,10 +29,13 @@ Plug 'endel/vim-github-colorscheme'
 Plug 'arcticicestudio/nord-vim'
 Plug 'reedes/vim-colors-pencil'
 Plug 'ayu-theme/ayu-vim'
+Plug 'blueshirts/darcula'
+Plug 'rakr/vim-one'
+Plug 'jdkanani/vim-material-theme'
+
 
 call plug#end()
 " ------------------------------
-
 
 " ------------ PLUGIN CONFIG ------------
 "1) nerdtree
@@ -109,6 +111,7 @@ set expandtab ts=4 sw=4 ai
 autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
 autocmd Filetype vue setlocal ts=2 sw=2 expandtab
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype css setlocal ts=2 sw=2 expandtab
 autocmd Filetype gohtml setlocal ts=2 sw=2 expandtab
 " ----------------------------------
 
@@ -228,8 +231,8 @@ syntax on
 set encoding=utf-8
 set termguicolors
 let base16colorspace=256
-colorscheme base16-tomorrow-night
-"set background=dark
+colorscheme material-theme
+set background=dark
 
 " hightlight gohtml as html
 au BufReadPost *.gohtml set syntax=html
@@ -244,3 +247,4 @@ let g:go_highlight_types = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
 " ----------------------------------
+
