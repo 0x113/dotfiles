@@ -31,7 +31,6 @@ Plug 'reedes/vim-colors-pencil'
 Plug 'ayu-theme/ayu-vim'
 Plug 'rakr/vim-one'
 Plug 'jdkanani/vim-material-theme'
-Plug 'dylanaraps/wal.vim'
 
 call plug#end()
 " ------------------------------
