@@ -40,7 +40,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-;font-0 = SF Mono:size=9:weight=semibold;1
+;font-0 = scientifica:size=6:weight=regular;1
 font-0 = Gohu Gohufont:size=12;1
 font-1 = Gofufont:size:12;1
 font-2 = siji:pixelsize=10;1
