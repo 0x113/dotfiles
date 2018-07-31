@@ -229,7 +229,7 @@ syntax on
 set encoding=utf-8
 set termguicolors
 let base16colorspace=256
-colorscheme material-theme
+colorscheme ayu
 set background=dark
 
 " hightlight gohtml as html
