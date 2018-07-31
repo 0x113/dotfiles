@@ -323,7 +323,6 @@ format-full-prefix = "bat "
 format-full-foreground = #ffffff
 format-full-background = #222222
 format-full-padding = 2
-;format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
