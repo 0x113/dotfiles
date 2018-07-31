@@ -34,15 +34,15 @@ line-color = #ffffff
 border-size = 4
 border-color = ${colors.background}
 
-padding-left = 0
+padding-left = 1
 padding-right = 2
 
 module-margin-left = 1
 module-margin-right = 2
 
-;font-0 = scientifica:size=6:weight=regular;1
+;font-0 = t Cherry:size=11;1
 font-0 = Gohu Gohufont:size=12;1
-font-1 = Gofufont:size:12;1
+font-1 = Gohu Gohufont:size:10;1
 font-2 = siji:pixelsize=10;1
 
 font-3 = Font Awesome 5 Free:pixelsize=8;3
@@ -50,8 +50,8 @@ font-4 = Font Awesome 5 Free Solid:pixelsize=8;3
 font-5 = Font Awesome 5 Brands:pixelsize=8;3
 
 modules-left = bspwm i3
-modules-center = date
-modules-right = filesystem pulseaudio battery wlan eth temperature
+;modules-center = date
+modules-right = pulseaudio battery date
 
 tray-position = right
 tray-padding = 2
@@ -77,27 +77,28 @@ label-unmounted-foreground = ${colors.foreground-alt}
 [module/bspwm]
 type = internal/bspwm
 
-ws-icon-0 = Internet;
-ws-icon-1 = Code;
-ws-icon-2 = Terminal;
-ws-icon-3 = Other;
-ws-icon-4 = Music;
+ws-icon-0 = Internet;1
+ws-icon-1 = Code;2
+ws-icon-2 = Terminal;3
+ws-icon-3 = Other;4
+ws-icon-4 = Music;5
 ;ws-icon-default = 
-
 label-focused = %icon%
-;label-focused-background = ${colors.background-alt}
-label-focused-underline= #fff
+label-focused-background = #EAEAED
+label-focused-foreground = #101010
+;label-focused-underline= #fff
 label-focused-padding = 2
 
 label-occupied = %icon%
-;label-occupied-foreground = #ff00ff
+label-occupied-background = #222222
 label-occupied-padding = 2
 
 label-urgent = %icon%!
-label-urgent-background = ${colors.alert}
+label-urgent-background = #222222
 label-urgent-padding = 2
 
 label-empty = %icon%
+label-empty-background = #222222
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 
@@ -243,25 +244,28 @@ format-disconnected =
 [module/date]
 type = internal/date
 interval = 5
-data =
-#date = " %Y-%m-%d"
-date-alt = " %Y-%m-%d"
+
+date = " %a %b %d"
+;date-alt = " %Y-%m-%d"
 
 time = %H:%M
-time-alt = %H:%M:%S
+;time-alt = %H:%M:%S
 
 format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
+format-foreground = #101010
+format-background = #EAEAED
+format-padding = 2
 
-label = %date% %time%
+
+label = %date% %time%
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 format-volume = <label-volume>
-label-volume =  %percentage%%
-format-volume-underline = #E57A44
+label-volume =  %percentage%
+label-volume-background = #222222
+label-volume-padding = 2
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
@@ -302,15 +306,21 @@ battery = BAT0
 adapter = AC
 full-at = 98
 
-format-charging = <animation-charging>  <label-charging>
-format-charging-underline = #ffb52a
+label-charging = %percentage%
+label-discharging = %percentage%
 
-format-discharging = <animation-discharging>  <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
+format-charging = bat <label-charging>
+format-charging-background = #222222
 
-format-full-prefix = " "
-format-full-prefix-foreground = #ffffff
-format-full-underline = ${self.format-charging-underline}
+format-charging-padding = 2
+
+format-discharging = bar <label-discharging>
+;format-discharging-underline = ${self.format-charging-underline}
+
+format-full-prefix = "bat"
+format-full-prefix-foreground = #101010
+format-full-prefix-background = #EAEAED
+;format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
