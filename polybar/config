@@ -313,13 +313,16 @@ format-charging = bat <label-charging>
 format-charging-background = #222222
 
 format-charging-padding = 2
+format-discharging-padding = 2
+
 
 format-discharging = bar <label-discharging>
 ;format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = "bat"
-format-full-prefix-foreground = #101010
-format-full-prefix-background = #EAEAED
+format-full-prefix = "bat "
+format-full-foreground = #ffffff
+format-full-background = #222222
+format-full-padding = 2
 ;format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
