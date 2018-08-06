@@ -19,13 +19,14 @@ bspc config gapless_monocle      true
 
 bspc rule -a Insomnia desktop='^4'
 bspc rule -a Google-chrome desktop='^1'
+bspc rule -o Opera desktop='^1'
 bspc rule -a Firefox desktop='^1'
 bspc rule -a brave desktop='^1'
 bspc rule -a Subl3 desktop='^2'
 bspc rule -a Code desktop='^2'
 bspc rule -a Atom desktop='^2'
 
-feh --bg-scale ~/Pictures/Wallpapers/forrest.jpg
+feh --bg-scale ~/Pictures/Wallpapers/triangle.jpg
 xrandr --output HDMI-2 --brightness 0.35
 #wal -i ~/Downloads/blured.jpg
 light -S 41
