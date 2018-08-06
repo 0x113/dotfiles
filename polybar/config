@@ -308,6 +308,8 @@ full-at = 98
 
 label-charging = %percentage%
 label-discharging = %percentage%
+label-discharging-background = #222222
+label-discharging-prefix-background = #222222
 
 format-charging = bat <label-charging>
 format-charging-background = #222222
