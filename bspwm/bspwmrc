@@ -26,7 +26,7 @@ bspc rule -a Subl3 desktop='^2'
 bspc rule -a Code desktop='^2'
 bspc rule -a Atom desktop='^2'
 
-feh --bg-scale ~/Pictures/Wallpapers/triangle.jpg
+feh --bg-scale ~/Pictures/Wallpapers/white.jpg
 xrandr --output HDMI-2 --brightness 0.35
 #wal -i ~/Downloads/blured.jpg
 light -S 41
