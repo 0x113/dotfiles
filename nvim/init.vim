@@ -20,6 +20,8 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'wakatime/vim-wakatime'
 Plug 'junegunn/goyo.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex'  }
 " ------------------------------
 
 " ---------- COLORS ------------
@@ -31,6 +33,8 @@ Plug 'reedes/vim-colors-pencil'
 Plug 'ayu-theme/ayu-vim'
 Plug 'rakr/vim-one'
 Plug 'jdkanani/vim-material-theme'
+Plug 'cseelus/vim-colors-lucid'
+Plug 'NerdyPepper/agila.vim'
 
 call plug#end()
 " ------------------------------
@@ -62,14 +66,27 @@ let g:jedi#popup_on_dot = 0
 let g:pymode_rope = 0
 let g:pymode_folding=0
 
-"6) LaTeX
-let g:livepreview_engine = 'evince'
-
 "7) deoplete
 let g:deoplete#disable_auto_complete = 0
 let g:deoplete#enable_at_startup = 1
 setlocal omnifunc=go#complete#Complete
 let g:deoplete#sources#go#gocode_binary = '/home/xa0s/Code/Go/bin/gocode'
+
+"8) vim-latext-live-preview
+autocmd Filetype tex setl updatetime=1
+let g:livepreview_previewer = 'evince'
+"let g:livepreview_engine = 'pdflatex'
+
+"9) Goyo
+let g:goyo_width = "80%"
+let g:goyo_height = "90%"
+let g:goyo_lineaer = 0
+
+"10) IndentLine
+let g:indentLine_enabled = 1
+let g:indentLine_concealcursor = 0
+let g:indentLine_char = '┆'
+let g:indentLine_faster = 1
 " ---------------------------------------
 
 
@@ -229,7 +246,7 @@ syntax on
 set encoding=utf-8
 set termguicolors
 let base16colorspace=256
-colorscheme base16-tomorrow-night
+colorscheme lucid
 set background=dark
 
 " hightlight gohtml as html
