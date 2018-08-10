@@ -6,10 +6,10 @@ allow_bold = false
 
 #font = t cherry 11
 #font = Dina 11
-font = Gohu GohuFont 12
+#font = Gohu GohuFont 12
 #font = UW Ttyp0 11
-#font = Misc Termsyn 12
-#font = xos4 Terminus 11
+font = Misc Termsyn 12
+#font = scientifica 9
 #font = Cartograph Mono CF semi-bold 11
 #font = Inconsolata Bold 11.5
 #font = Monaco BSemi 10
