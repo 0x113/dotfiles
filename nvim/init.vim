@@ -83,10 +83,10 @@ let g:goyo_height = "90%"
 let g:goyo_lineaer = 0
 
 "10) IndentLine
-let g:indentLine_enabled = 1
-let g:indentLine_concealcursor = 0
-let g:indentLine_char = '┆'
-let g:indentLine_faster = 1
+let g:indentLine_enabled = 0
+"let g:indentLine_concealcursor = 0
+"let g:indentLine_char = '┆'
+"let g:indentLine_faster = 1
 " ---------------------------------------
 
 
@@ -246,7 +246,7 @@ syntax on
 set encoding=utf-8
 set termguicolors
 let base16colorspace=256
-colorscheme lucid
+colorscheme agila
 set background=dark
 
 " hightlight gohtml as html
