@@ -1,6 +1,6 @@
 <h1 align="center">dotfiles</h1>
 
-![scr](https://i.imgur.com/M8NMpgI.png)
+![scr](https://i.imgur.com/4NPIHed.png)
 
 ## System Configuration
 
@@ -9,6 +9,6 @@
 * shell: `zsh`
 * terminal: `termite`
 * notifications: `dunst`
-* colorscheme: `ayu`
+* colorscheme: `agila`
 * bar: `polybar`
 * text-editor: `neovim`
