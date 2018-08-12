@@ -321,7 +321,7 @@ format-charging-padding = 2
 format-discharging-padding = 2
 
 
-format-discharging = bar <label-discharging>
+format-discharging = bat <label-discharging>
 ;format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = "bat "
